@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Infinity Wall</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
 
     <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
@@ -18,7 +18,53 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <h1 class="bg-black text-white font-bold">hello</h1>
+    <!-- Header -->
+    <div id="headerbox" class="sticky top-0 z-10">
+      <div
+        id="header"
+        class="w-full p-3 m-0 bg-primary text-white font-bold text-4xl text-center"
+      >
+        Infinity Wall
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="maincontainer" class="bg-secondary flex w-full min-h-screen">
+      <div
+        id="imagescontainer"
+        class="flex justify-evenly flex-col m-4 md:m-12 md:flex-row md:flex-wrap w-full"
+      >
+        <div
+          class="flex flex-col w-full md:w-1/2 lg:w-1/2 h-64 md:h-96 my-4 px-2 lg:px-4"
+          id="imagediv"
+        >
+          <div id="image" class="h-full w-full relative">
+            <img
+              src="./assets/demo1.jpg"
+              alt="demo1"
+              class="object-cover w-full h-full"
+              id="setimage"
+            />
+          </div>
+          <div
+            id="aboutimage"
+            class="sticky bottom-0 left-0 pb-2 pl-2 bg-black text-white"
+            id="setabout"
+            ;
+          >
+            Photo by Jordi ENP
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader -->
+    <div
+      id="loadercontainer"
+      class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+    >
+      <img src="./assets/loader.svg" alt="Loading" srcset="" />
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
   </body>
